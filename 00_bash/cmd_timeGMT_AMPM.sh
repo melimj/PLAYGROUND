@@ -8,17 +8,15 @@
 #
 #var
 hour=`date "+%H"`
-hourGMT=`expr $hour + 9`
 
-#echo $hour
-#echo $hourGMT
+echo $hour
 
 #AM
-if [ $hourGMT -lt 12 ]; then 
+if [ $hour -lt 12 ]; then 
 	echo "It's AM"
 	exit
 #PM
-elif [ $hourGMT -ge 12 ]; then 
+elif [ $hour -ge 12 ]; then 
 	echo "It's PM"
 	exit
 fi

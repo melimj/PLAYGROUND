@@ -1,0 +1,6 @@
+#login root_user no PW
+sudo su -
+
+#change PW
+passwd
+

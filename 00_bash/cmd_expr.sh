@@ -13,7 +13,7 @@ f=`expr $a*$b`
 g=`expr $a * $b`
 h=`expr $a // $b`
 
-i=`echo "($a * $b)"`
+i=`echo "($a*$b)"`
 
 #print
 echo $c 

@@ -1,0 +1,10 @@
+git add xxx.txt
+git commit -a -m "comment"
+ #-a: all
+ #-m: mention(comment)
+
+git push
+or
+git push --force origin main
+
+

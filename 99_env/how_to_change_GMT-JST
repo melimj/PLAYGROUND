@@ -1,0 +1,25 @@
+#setting file
+ls -la /etc/localtime
+ll /etc/sysconfig/clock
+ll /usr/share/zoneinfo/Asia/Tokyo
+
+#backup
+cp -ip /etc/localtime /etc/localtime_bk
+diff /etc/localtime /etc/localtime_bk
+
+###change clock
+
+#ln:link
+ -s:symbolic link(=another name of file/dir)
+ -f:force
+ (ex) ln -sf A B: linked B -> A
+
+#1)
+ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+ll /etc/localtime
+
+#2)No turn back to GMTorUTC when reboot
+ls -la /etc/sysconfig/clock
+vi /etc/sysconfig/clock 
+-> ZONE="Asia/Tokyo"
+-> UTC=false

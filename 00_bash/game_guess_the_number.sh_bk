@@ -1,0 +1,38 @@
+#変数numを乱数で宣言し、入力した値が同じになるまで繰り返すスクリプトを作成せよ。
+#while文を使用すること。
+#入力値が乱数より大きいか小さいかを表示させること
+#
+#
+#
+#/bin/bash
+#
+#
+#
+randomNum=`expr $RANDOM % 10`
+
+echo "$randomNum"
+echo "Welcome, let's play the game of guessing the number." 
+
+#while : do done 
+while : 
+do
+	read -p "Press the any number 1~10 :" input
+
+	#equal the number
+	if [ $input -eq $randomNum ]; then
+		echo "You got it!"
+		break
+
+	#higher than the number, you got hint
+	elif [ $input -gt $randomNum ]; then
+		echo "The number is more higher"
+		input=0
+
+	#lower than the number, you got another hint
+	elif [ $input -lt $randumNum ]; then
+		echo "The number is more lower"
+		input=0
+
+	fi
+done
+

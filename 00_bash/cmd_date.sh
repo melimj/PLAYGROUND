@@ -12,10 +12,10 @@
 #echo "$date"
 #echo "$time"
 
-date "+%d,%m,%y,%T GMT"
+date "+%d,%m,%y,%T JST"
 
-date "+%dd,%mm,%Y,%T GMT"
+date "+%dd,%mm,%Y,%T JST"
 
-date "+%Y/%m/%d %T GMT"
+date "+%Y/%m/%d %T JST"
 
-date "+%Y %m %d %T GMT"
+date "+%Y %m %d %T JST"

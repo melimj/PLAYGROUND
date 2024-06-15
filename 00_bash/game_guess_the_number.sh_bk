@@ -11,27 +11,32 @@
 randomNum=`expr $RANDOM % 10`
 
 echo "$randomNum"
-echo "Welcome, let's play the game of guessing the number." 
+echo "Welcome, let's play the game of guessing the number."
+echo "When you want to exit the game, enter the "99"." 
 
 #while : do done 
 while : 
 do
-	read -p "Press the any number 1~10 :" input
+	read -p "Enter any number 0~10 :" input
+
+	if [ $input = 99 ]; then
+		echo "bye" 
+		break
 
 	#equal the number
-	if [ $input -eq $randomNum ]; then
+	elif [ $input = $randomNum ]; then
 		echo "You got it!"
 		break
 
-	#higher than the number, you got hint
+	#lower than the number, you got hint
 	elif [ $input -gt $randomNum ]; then
-		echo "The number is more higher"
-		input=0
-
-	#lower than the number, you got another hint
-	elif [ $input -lt $randumNum ]; then
 		echo "The number is more lower"
-		input=0
+		#input=0
+
+	#higher than the number, you got another hint
+	elif [ $input -lt $randomNum ]; then
+		echo "The number is more higher"
+		#input=0
 
 	fi
 done

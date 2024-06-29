@@ -9,8 +9,10 @@
 #
 #
 randomNum=`expr $RANDOM % 10`
-
-echo "$randomNum"
+#echo "$randomNum"
+#
+#
+#notice
 echo "Welcome, let's play the game of guessing the number."
 echo "When you want to exit the game, enter the "99"." 
 

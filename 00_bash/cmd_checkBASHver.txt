@@ -1,0 +1,8 @@
+#####check out bash version
+#bash --version
+
+
+#####bash file
+#/usr/bin/bash
+# -> nkf -w /usr/bin/bash (x) : because it's BINARY file
+# -> od -h /usr/bin/bash (o) 

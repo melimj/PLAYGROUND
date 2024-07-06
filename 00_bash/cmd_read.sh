@@ -10,3 +10,4 @@ read a
 
 #print
 echo "$a"
+echo "'$a'"

@@ -19,3 +19,5 @@ date "+%dd,%mm,%Y,%T JST"
 date "+%Y/%m/%d %T JST"
 
 date "+%Y %m %d %T JST"
+
+date "+%Y%m%d%H%M%S"
